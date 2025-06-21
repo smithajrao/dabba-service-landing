@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import WaitlistForm from './components/WaitlistForm';
+import React from 'react';
 
 function App() {
   return (
@@ -12,13 +14,13 @@ function App() {
         <p className="max-w-xl text-lg md:text-xl text-gray-700 mb-8">
           Home-cooked vegetarian meals delivered right to your university campus. Healthy, tasty, and budget-friendly.
         </p>
-        <a href="#waitlist" className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-full shadow-md transition">
+       {/* <a href="#waitlist" className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-full shadow-md transition">
           Join the Waitlist
-        </a>
+        </a>*/}
       </section>
 
       {/* Waitlist Form */}
-      <section id="waitlist" className="py-12 bg-white px-4">
+      {/*<section id="waitlist" className="py-12 bg-white px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-6 text-orange-800">Join Our Waitlist</h2>
           <p className="text-center text-gray-600 mb-8">
@@ -33,7 +35,7 @@ function App() {
             marginwidth="0">Loading…</iframe>
           </div>
         </div>
-      </section>
+      </section>*/}
 
       {/* Pricing Section */}
 <section className="py-12 bg-orange-50">
@@ -77,7 +79,12 @@ function App() {
     </div>
   </div>
 </section>
-
+<section className="py-12 bg-orange-50">
+  <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+  <h2 className="text-3xl font-bold mb-6 text-orange-800">Join the Waitlist</h2>
+    <WaitlistForm />
+  </div>
+</section>
     </div>
 
     
