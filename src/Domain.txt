@@ -1,1 +1,2 @@
 https://dabba-service-landing.vercel.app/
+dabbaservice@dabba-admin-panel.iam.gserviceaccount.com
