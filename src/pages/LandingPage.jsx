@@ -13,6 +13,7 @@ const LandingPage = () => {
     const { credential } = credentialResponse;
     console.log("Token received from Google:", credential); // Log the token for debugging
     const response = await fetch("http://localhost:8080/api/auth/google", {
+     // const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/auth/google`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ token: credential }),
